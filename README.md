@@ -8,3 +8,7 @@ Loops
 Control Statement
 Jar
 branching statment
+
+Sub class 
+"class hostel extends Buildings"      same for academic building
+no of room, is mess open               isau
