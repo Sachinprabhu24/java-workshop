@@ -18,6 +18,7 @@ public class AcademicBuilding extends Building{
     public void setIsAuditoriumOpen(boolean isAuditoriumOpen) {
         this.isAuditoriumOpen = isAuditoriumOpen;
     }
+    @Override
     public void displayAcademicBuildingInfo() {
         super.PrintDetails();
         System.out.println("Has Library: " + (hasLibraryOpen ? "Yes" : "No"));

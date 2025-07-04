@@ -31,7 +31,7 @@ public class Location {
         return address;
     }
 
-    public String 
+    
     public String getPostalCode() {
         return postalCode;
     }
