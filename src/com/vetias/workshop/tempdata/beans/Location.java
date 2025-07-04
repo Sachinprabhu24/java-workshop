@@ -59,6 +59,12 @@ public class Location {
     }
     @Override
     public String toString(){
-        return "location{Name: " + name + ",Latitude: "+latitude+",Longitude :" + longitude+ ",Address: "+address+",PostalCode : "+postalCode+",Contact: "+contact+"}";
+        return "location{Name: " + name + 
+        ",Latitude: "+latitude+
+        ",Longitude :" + longitude+ 
+        ",Address: "+address+
+        ",PostalCode : "+postalCode+
+        ",Contact: "+contact+
+        "}";
     }
 }
