@@ -57,5 +57,4 @@ public class Location {
     public void setContact(String contact) {
         this.contact = contact;
     }
-    
 }
