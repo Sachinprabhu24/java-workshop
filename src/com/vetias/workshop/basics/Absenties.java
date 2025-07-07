@@ -1,4 +1,4 @@
-public class AbsenteesDeleteAndPrintPresenties {
+public class Absenties {
     public static void main(String[] args) {
         String[][] students = {
             {"2422K1311", "Sachin"},
@@ -9,8 +9,8 @@ public class AbsenteesDeleteAndPrintPresenties {
         };
 
         System.out.println("Initial Students List:");
-        for (int i = 0; i < students.length; i++) {
-            System.out.println("RollNo: " + students[i][0] + ", Name: " + students[i][1]);
+        for (String[] student : students) {
+            System.out.println("RollNo: " + student[0] + ", Name: " + student[1]);
         }
 
         int indexToDelete = 4; 
@@ -35,8 +35,8 @@ public class AbsenteesDeleteAndPrintPresenties {
         if (presentStudents.length == 0) {
             System.out.println("No students left after deletion.");
         } else {
-            for (int i = 0; i < presentStudents.length; i++) {
-                System.out.println("RollNo: " + presentStudents[i][0] + ", Name: " + presentStudents[i][1]);
+            for (String[] student : presentStudents) {
+                System.out.println("RollNo: " + student[0] + ", Name: " + student[1]);
             }
         }
     }

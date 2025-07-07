@@ -22,7 +22,6 @@ public class Hostel extends Building {
     public void setMessOpen(boolean messOpen) {
         isMessOpen = messOpen;
     }
-    @Override
     public void displayHostelInfo() {
         super.PrintDetails();
         System.out.println("Number of Rooms: " + numberOfRooms);

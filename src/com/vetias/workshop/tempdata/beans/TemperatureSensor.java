@@ -1,9 +1,10 @@
 public class TemperatureSensor implements Sensor {
-    private float temperature;
+    private final  float temperature;
 
     public TemperatureSensor(float atemperature) {
         temperature = atemperature;
     }
+    @Override
     public float getReading() {
         return temperature;
     }

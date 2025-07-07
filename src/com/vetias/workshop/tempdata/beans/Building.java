@@ -23,10 +23,10 @@ public class Building{
     public int getFloors() {
         return floors;
     }
-    public double getOpeningHours() {
+    public LocalDateTime getOpeningHours() {
         return openingHours;
     }
-    public double getClosingHours() {
+    public LocalDateTime getClosingHours() {
         return closingHours;
     }
     public void setName(String name) {
@@ -38,10 +38,10 @@ public class Building{
     public void setFloors(int floors) {
         this.floors = floors;
     }
-    public void setOpeningHours(double openingHours) {
+    public void setOpeningHours(LocalDateTime openingHours) {
         this.openingHours = openingHours;
     }
-    public void setClosingHours(double closingHours) {
+    public void setClosingHours(LocalDateTime closingHours) {
         this.closingHours = closingHours;
     }
 
