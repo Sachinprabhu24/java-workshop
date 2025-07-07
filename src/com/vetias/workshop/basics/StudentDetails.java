@@ -9,9 +9,9 @@ public class StudentDetails {
         };    
 
         System.out.println("Student Details:");
-        for (int i = 0; i < students.length; i++) {
-            String rollNo = students[i][0];
-            String name = students[i][1];
+        for (String[] student : students) {
+            String rollNo = student[0];
+            String name = student[1];
             System.out.printf("Roll No: "+rollNo+",Name: "+name+"%n");
         }
     }
