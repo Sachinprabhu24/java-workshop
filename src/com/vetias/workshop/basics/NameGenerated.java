@@ -12,22 +12,17 @@ public class NameGenerated{
         System.out.println("Enter your Qualification: ");
         String qualification= scanner.nextLine();
         StringBuilder sb= new StringBuilder();
+        String prefix = null;
 
         if ("Male".equalsIgnoreCase(gender)){
-            sb.append("Mr.");
-            sb.append(Name);
-            sb.append(",");
-            sb.append(qualification);
-            String result=sb.toString();
-            System.out.println(result);
+            prefix = "Mr.";
+        } else if ("Female".equalsIgnoreCase(gender)) {
+            prefix = "Mrs.";
+        } else {
+            System.out.println("Invalid Gender");
+            throw new IllegalArgumentException("Invalid Gender");
         }
-        else {
-            sb.append("Mrs.");
-            sb.append(Name);
-            sb.append(",");
-            sb.append(qualification);
-            String result=sb.toString();
-            System.out.println(result);
-        }
+        sb.append(prefix).append(Name).append(", ").append(qualification);
+        System.out.println(sb.toString());
     }
 }
