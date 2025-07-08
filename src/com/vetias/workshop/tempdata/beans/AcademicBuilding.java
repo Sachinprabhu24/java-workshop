@@ -2,7 +2,8 @@ public class AcademicBuilding extends Building{
     private boolean hasLibraryOpen;
     private boolean isAuditoriumOpen;
 
-    public AcademicBuilding(boolean hasLibraryOpen, boolean isAuditoriumOpen) {
+    public AcademicBuilding(String name, double area, int floors, java.time.LocalDateTime openTime, java.time.LocalDateTime closeTime, boolean hasLibraryOpen, boolean isAuditoriumOpen) {
+        super(name, area, floors, openTime, closeTime);
         this.hasLibraryOpen = hasLibraryOpen;
         this.isAuditoriumOpen = isAuditoriumOpen;
     }

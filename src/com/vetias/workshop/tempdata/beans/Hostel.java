@@ -1,8 +1,11 @@
+import java.time.LocalDateTime;
+
 public class Hostel extends Building {
     private int numberOfRooms;
     private boolean isMessOpen;
 
-    public Hostel(int numberOfRooms, boolean isMessOpen) {
+    public Hostel(String name, double area, int floors, LocalDateTime createdAt, LocalDateTime updatedAt, int numberOfRooms, boolean isMessOpen) {
+        super(name, area, floors, createdAt, updatedAt);
         this.numberOfRooms = numberOfRooms;
         this.isMessOpen = isMessOpen;
     }
