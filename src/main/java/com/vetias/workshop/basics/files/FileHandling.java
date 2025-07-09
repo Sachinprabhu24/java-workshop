@@ -1,4 +1,4 @@
-package files;
+package com.vetias.workshop.basics.files;
 import java.io.File;
 
 public class FileHandling {

@@ -1,3 +1,4 @@
+package main.com.java.vetias.workshop.tempdata;
 public class Tempdata {
     public static void main(String[] args) {
         String name = "VET Thindal";
