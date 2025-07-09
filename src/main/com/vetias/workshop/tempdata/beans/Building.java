@@ -14,6 +14,12 @@ public class Building{
         this.openingHours = openingHours;
         this.closingHours = closingHours;
     }
+    public Floor[] getFloorsList() {
+        return floorsList;
+    }
+    public void setFloorsList(Floor[] floorsList) {
+        this.floorsList = floorsList;
+    }
     public String getName() {
         return name;
     }

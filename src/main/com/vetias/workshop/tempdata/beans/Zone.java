@@ -12,6 +12,14 @@ public class Zone{
         this.area = area;
         this.description = description;
     }
+     public Zone[] getZonesList() {
+        return zonesList;
+    }
+
+    public void setZonesList(Zone[] zonesList) {
+        this.zonesList = zonesList;
+    }
+
 
     public String getName() {
         return name;
@@ -51,5 +59,31 @@ public class Zone{
 
     public void setDescription(String description) {
         this.description = description;
+    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Zone zone = (Zone) o;
+
+        if (Double.compare(zone.area, area) != 0) return false;
+        if (!name.equals(zone.name)) return false;
+        if (!zoneID.equals(zone.zoneID)) return false;
+        if (!type.equals(zone.type)) return false;
+        return description.equals(zone.description);
+    }
+
+    @Override
+    public int hashCode() { 
+        int result;
+        long temp;
+        result = name.hashCode();
+        result = 31 * result + zoneID.hashCode();
+        result = 31 * result + type.hashCode();
+        temp = Double.doubleToLongBits(area);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        result = 31 * result + description.hashCode();
+        return result;
     }
 }
