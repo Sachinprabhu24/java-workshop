@@ -4,7 +4,6 @@ public class TemperatureSensor implements Sensor {
     public TemperatureSensor(float atemperature) {
         temperature = atemperature;
     }
-    @Override
     public float getReading() {
         return temperature;
     }

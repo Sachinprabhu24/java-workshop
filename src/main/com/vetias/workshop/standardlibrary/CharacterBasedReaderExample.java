@@ -1,4 +1,4 @@
-package com.vetias.workshop.standardlibrary;
+package main.com.vetias.workshop.standardlibrary;
 
 
 import java.io.BufferedReader;

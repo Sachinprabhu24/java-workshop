@@ -1,4 +1,6 @@
+package main.com.java.vetias.workshop.tempdata.beans;
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 public class Hostel extends Building {
     private int numberOfRooms;
@@ -29,5 +31,29 @@ public class Hostel extends Building {
         super.PrintDetails();
         System.out.println("Number of Rooms: " + numberOfRooms);
         System.out.println("Is Mess Open: " + (isMessOpen ? "Yes" : "No"));
+    }
+     @Override
+    public String toString() {
+        return "HostelBuilding{" +
+                "numberOfRooms=" + numberOfRooms +
+                ", isMessOpen=" + isMessOpen +
+                ", " + super.toString() +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {   
+        if (this == o) return true;
+        if (!super.equals(o)) return false;
+
+        HostelBuilding that = (HostelBuilding) o;
+
+        if (numberOfRooms != that.numberOfRooms) return false;
+        return isMessOpen == that.isMessOpen;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(numberOfRooms, isMessOpen, super.hashCode());
     }
 }

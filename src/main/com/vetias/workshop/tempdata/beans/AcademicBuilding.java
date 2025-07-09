@@ -1,3 +1,4 @@
+package main.com.java.vetias.workshop.tempdata.beans;
 public class AcademicBuilding extends Building{
     private boolean hasLibraryOpen;
     private boolean isAuditoriumOpen;
@@ -23,5 +24,28 @@ public class AcademicBuilding extends Building{
         super.PrintDetails();
         System.out.println("Has Library open: " + (hasLibraryOpen ? "Yes" : "No"));
         System.out.println("Is Auditorium open: " + (isAuditoriumOpen ? "Yes" : "No"));
+    }
+     @Override
+    public String toString() {
+        return "AcademicBuilding{" +
+                "hasLibraryOpen=" + hasLibraryOpen +
+                ", isAuditoriumOpen=" + isAuditoriumOpen +
+                ", " + super.toString() +
+                '}';
+    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!super.equals(o)) return false;
+
+        AcademicBuilding that = (AcademicBuilding) o;
+
+        if (hasLibraryOpen != that.hasLibraryOpen) return false;
+        return isAuditoriumOpen == that.isAuditoriumOpen;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(hasLibraryOpen, isAuditoriumOpen, super.hashCode());
     }
 }
