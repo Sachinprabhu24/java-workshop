@@ -1,3 +1,5 @@
+package com.vetias.workshop.basics;
+
 import java.time.LocalDate;
 import java.util.Scanner;
 
