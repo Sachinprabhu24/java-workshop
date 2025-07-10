@@ -1,12 +1,16 @@
+package com.vetias.java.workshop.tempdata.beans;
+
 public class Floor{
     private int floorName;
     private double number;
+    private Zone[] zones;
 
     public Floor(int floorName, double number) {
         this.floorName = floorName;
         this.number = number;
     }
     public Zone[] getZones() {
+        Zone[] zones = null;
         return zones;
     }
 

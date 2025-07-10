@@ -1,3 +1,5 @@
-public interface Sensor{
-    public float getReading();                              
+package com.vetias.java.workshop.tempdata.beans;
+
+public interface Sensor {
+    float getReading();
 }

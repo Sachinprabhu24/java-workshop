@@ -1,3 +1,4 @@
+package com.vetias.java.workshop.basics;
 public class Pricelist {
     public static void main(String[] args) {
         // Example usage of the Pricelist class

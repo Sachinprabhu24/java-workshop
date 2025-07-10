@@ -1,3 +1,4 @@
+package com.vetias.java.workshop.basics;
 
 public class MultipleStrings {
     public static void main(String[] args) {

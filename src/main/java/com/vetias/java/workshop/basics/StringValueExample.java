@@ -1,3 +1,4 @@
+package com.vetias.java.workshop.basics;
 public class StringValueExample {
     public static void main(String[] args) { 
         StringBuilder sd= new StringBuilder();

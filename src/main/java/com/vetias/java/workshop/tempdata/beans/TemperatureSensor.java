@@ -1,3 +1,4 @@
+package com.vetias.java.workshop.tempdata.beans;
 public class TemperatureSensor implements Sensor {
     private final  float temperature;
 

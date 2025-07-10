@@ -1,4 +1,4 @@
-package main.com.java.vetias.workshop.tempdata.beans;
+package com.vetias.java.workshop.tempdata.beans;
 import java.time.LocalDateTime;
 import java.util.Objects;
 

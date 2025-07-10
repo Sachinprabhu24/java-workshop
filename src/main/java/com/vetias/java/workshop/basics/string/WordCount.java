@@ -1,13 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
 package com.vetias.java.workshop.basics.string;
 
 
 public class WordCount {
-    public int count(String inpuString){
-        return 0;
+    public int count(String inputString){
+        int count = 0 ;
+        String[] words = inputString.split(" ");
+        count = words.length;
+        return count;
     }
 }

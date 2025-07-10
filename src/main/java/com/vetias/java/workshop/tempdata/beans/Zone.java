@@ -1,4 +1,6 @@
-public class Zone{
+package com.vetias.java.workshop.tempdata.beans;
+
+public class Zone {
     private String name;
     private String zoneID;
     private String type;

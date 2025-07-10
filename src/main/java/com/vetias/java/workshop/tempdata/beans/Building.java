@@ -1,3 +1,5 @@
+package com.vetias.java.workshop.tempdata.beans;
+
 import java.time.LocalDateTime;
 
 public class Building{

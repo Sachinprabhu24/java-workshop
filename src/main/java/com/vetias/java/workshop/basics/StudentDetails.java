@@ -1,3 +1,4 @@
+package com.vetias.java.workshop.basics;
 public class StudentDetails {
     public static void main(String[] args) {
         String[][] students = {
