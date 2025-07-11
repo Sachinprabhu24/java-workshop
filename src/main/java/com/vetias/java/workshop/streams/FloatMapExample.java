@@ -18,6 +18,6 @@ public class FloatMapExample {
         .forEach(System.out::println);
 
 
-        List<String> CSAnames= new ArrayList<>();
+        
     }
 }
