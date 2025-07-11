@@ -10,7 +10,7 @@ public class ListExample {
         names.add("Logesh");
         names.add("Waran");
         
-        System.out.println(names);
+        names.forEach(System.out::println);
         names.set(1,"Teldulkar");
         for (int i=0;i<names.size();i++){
             System.out.println(names.get(i));
