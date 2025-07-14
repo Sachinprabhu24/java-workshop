@@ -1,5 +1,7 @@
 package com.vetias.java.workshop.tempdata.beans;
 
+import java.util.Objects;
+
 public class Floor{
     private int floorName;
     private double number;
@@ -8,6 +10,10 @@ public class Floor{
     public Floor(int floorName, double number) {
         this.floorName = floorName;
         this.number = number;
+    }
+
+    public Floor(Zone[] zones) {
+        this.zones = zones;
     }
     public Zone[] getZones() {
         Zone[] zones = null;

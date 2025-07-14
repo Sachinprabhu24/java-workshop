@@ -1,3 +1,5 @@
+package com.vetias.java.workshop.basics;
+
 public class Concadenate {
     public static void main(String[] args) {
         String firstName = "Sachin";

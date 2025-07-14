@@ -8,6 +8,7 @@ public class Building{
     private int floors;
     private LocalDateTime openingHours;
     private LocalDateTime closingHours;
+    private Floor[] floorsList;
 
     public Building(String name, double area, int floors, LocalDateTime openingHours, LocalDateTime closingHours) {
         this.name = name;

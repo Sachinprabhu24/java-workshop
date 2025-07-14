@@ -46,7 +46,7 @@ public class Hostel extends Building {
         if (this == o) return true;
         if (!super.equals(o)) return false;
 
-        HostelBuilding that = (HostelBuilding) o;
+        Hostel that = (Hostel) o;
 
         if (numberOfRooms != that.numberOfRooms) return false;
         return isMessOpen == that.isMessOpen;

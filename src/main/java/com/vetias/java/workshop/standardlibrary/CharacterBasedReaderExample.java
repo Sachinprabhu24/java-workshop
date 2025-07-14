@@ -14,7 +14,6 @@ public class CharacterBasedReaderExample {
             }
         } catch (IOException e) {
             System.err.println("Error reading file:");
-            e.printStackTrace();
         }
 
     }

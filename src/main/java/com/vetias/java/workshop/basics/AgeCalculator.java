@@ -1,4 +1,4 @@
-package com.vetias.workshop.basics;
+package com.vetias.java.workshop.basics;
 
 import java.time.LocalDate;
 import java.util.Scanner;

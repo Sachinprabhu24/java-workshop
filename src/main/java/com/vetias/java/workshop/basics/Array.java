@@ -1,3 +1,5 @@
+package com.vetias.java.workshop.basics;
+
 public class Array{
     public static void main(String[] args) {
         int[] marks = {97,89,95,94,85};

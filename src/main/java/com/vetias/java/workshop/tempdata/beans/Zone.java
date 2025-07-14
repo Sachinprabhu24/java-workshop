@@ -1,11 +1,12 @@
 package com.vetias.java.workshop.tempdata.beans;
 
-public class Zone {
+public class Zone{
     private String name;
     private String zoneID;
     private String type;
     private double area;
     private String description;
+    private Zone[] zonesList;
 
     public Zone(String name, String zoneID, String type, double area, String description) {
         this.name = name;
@@ -14,14 +15,14 @@ public class Zone {
         this.area = area;
         this.description = description;
     }
-     public Zone[] getZonesList() {
+
+    public Zone[] getZonesList() {
         return zonesList;
     }
 
     public void setZonesList(Zone[] zonesList) {
         this.zonesList = zonesList;
     }
-
 
     public String getName() {
         return name;
@@ -62,6 +63,17 @@ public class Zone {
     public void setDescription(String description) {
         this.description = description;
     }
+    @Override
+    public String toString() {
+        return "Zone{" +
+                "name='" + name + '\'' +
+                ", zoneID='" + zoneID + '\'' +
+                ", type='" + type + '\'' +
+                ", area=" + area +
+                ", description='" + description + '\'' +
+                '}';
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

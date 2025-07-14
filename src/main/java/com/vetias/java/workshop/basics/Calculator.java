@@ -1,3 +1,5 @@
+package com.vetias.java.workshop.basics;
+
 public class Calculator {
     public static int divide(int a,int b){
         try {

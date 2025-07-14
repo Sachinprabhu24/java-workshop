@@ -1,3 +1,5 @@
+package com.vetias.java.workshop.basics;
+
 import java.time.LocalDateTime;
 
 public class DateFormat {

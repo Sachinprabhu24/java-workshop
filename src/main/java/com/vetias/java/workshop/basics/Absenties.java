@@ -1,3 +1,5 @@
+package com.vetias.java.workshop.basics;
+
 public class Absenties {
     public static void main(String[] args) {
         String[][] students = {
