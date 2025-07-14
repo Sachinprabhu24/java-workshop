@@ -1,21 +1,16 @@
 package com.vetias.java.workshop.tempdata;
 
+import java.time.LocalDate;
+
+import com.vetias.java.workshop.tempdata.beans.Organization;
+
 public class Tempdata {
     public static void main(String[] args) {
-        String name = "VET Thindal";
-        double latitude = 10.123456;
-        double longitude = 78.123456;
-        String address = "Thindal, Erode, Tamil Nadu";
-        String country = "India";
-        String postalCode = "638012";
-        String contact = "9876543210";
-
-        System.out.println("Name: " + name);
-        System.out.println("Latitude: " + latitude);
-        System.out.println("Longitude: " + longitude);
-        System.out.println("Address: " + address);
-        System.out.println("Country: " + country);
-        System.out.println("Postal Code: " + postalCode);
-        System.out.println("Contact: " + contact);
+        Organization VET = new Organization("Vellalar Educational Trust",  "www.vet.ac.in" ,
+         "12- Thindal Busstop, Thindal ,Erode , TamilNadu. 638012",
+         "+91 96857 42135" , "vellalartrust85@gmail.com",
+         45456 , LocalDate.of(1985,6,25));
+        System.out.println(VET);
+        System.out.println(VET.Name());
     }
 }
