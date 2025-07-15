@@ -26,13 +26,15 @@ public class JDBCExample {
         organizationDAO.createTable(dbConnection);
         Organization vet = new Organization(
             "VET",
-            "Vellalar Educational Trust",
             "www.vet.com",
             "contact@vet.com",
             "+91 96851 31436",
-            "SomeOtherString",
-            4546L,null);
+            4546L,
+            "A trust for educational development",
+            null);
         organizationDAO.save(dbConnection, vet);
+        Organization foundOrganization = organizationDAO.findByName(dbConnection, "VET");
+        System.out.println("Found Organization: " + foundOrganization);
     }
 
     

@@ -4,11 +4,10 @@ import java.time.LocalDate;
 
 public record Organization(String Name,
     String Website,
-    String CompleteAddress,
-    String contactNumber,
     String Email,
-    String description,
+    String contactNumber,
     long RegistrationNumber,
+    String description,
     LocalDate RegistrationDate) {
 
 }
