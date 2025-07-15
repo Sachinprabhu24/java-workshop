@@ -7,6 +7,7 @@ public record Organization(String Name,
     String CompleteAddress,
     String contactNumber,
     String Email,
+    String description,
     long RegistrationNumber,
     LocalDate RegistrationDate) {
 

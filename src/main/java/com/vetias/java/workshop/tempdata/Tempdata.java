@@ -9,6 +9,7 @@ public class Tempdata {
         Organization VET = new Organization("Vellalar Educational Trust",  "www.vet.ac.in" ,
          "12- Thindal Busstop, Thindal ,Erode , TamilNadu. 638012",
          "+91 96857 42135" , "vellalartrust85@gmail.com",
+         "VET",
          45456 , LocalDate.of(1985,6,25));
         System.out.println(VET);
         System.out.println(VET.Name());
