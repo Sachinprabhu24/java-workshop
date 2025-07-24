@@ -1,4 +1,4 @@
-package com.vetias.java.workshop.ipaddress;
+package com.vetias.java.workshop.basics.ipaddress;
 import java.net.InetAddress;
 
 public class FidIPAddress {
