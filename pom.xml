@@ -51,6 +51,7 @@
                 <version>1.0-SNAPSHOT</version>
                 <executions>
                     <execution>
+                        <?m2e ignore?>
                         <phase>generate-sources</phase>
                         <goals>
                             <goal>generate</goal>
